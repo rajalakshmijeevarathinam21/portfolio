@@ -549,6 +549,30 @@ html.light-mode .hero-grid {
     gap: 1.75rem;
 }
 
+.hero-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(59, 130, 246, 0.4);
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.25);
+    transition: var(--transition);
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 12px 40px rgba(6, 182, 212, 0.35);
+}
+
+
 .hero .badge {
     font-size: 0.8rem;
     padding: 0.5rem 1.2rem;

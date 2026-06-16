@@ -522,65 +522,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initCharts();
 
-    // ============================================
-    // PROJECT FILTERS
-    // ============================================
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            const filter = btn.dataset.filter;
-
-            projectCards.forEach(card => {
-                const categories = card.dataset.category?.split(',') || [];
-
-                if (filter === 'all' || categories.includes(filter)) {
-                    card.style.display = '';
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(20px)';
-                    requestAnimationFrame(() => {
-                        card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    });
-                } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        card.style.display = 'none';
-                    }, 300);
-                }
-            });
-        });
-    });
-
-    // ============================================
-    // PROJECT EXPAND/COLLAPSE
-    // ============================================
-    document.querySelectorAll('.expand-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const card = btn.closest('.project-card');
-            const details = card?.querySelector('.project-details');
-
-            if (details) {
-                const isHidden = details.classList.contains('hidden');
-                details.classList.toggle('hidden');
-                btn.textContent = isHidden ? 'Hide Details' : 'View Details';
-
-                // Smooth scroll into view if expanding
-                if (isHidden) {
-                    setTimeout(() => {
-                        details.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    }, 100);
-                }
-            }
-        });
-    });
 
     // ============================================
     // CONTACT FORM

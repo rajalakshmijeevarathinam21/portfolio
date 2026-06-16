@@ -31,7 +31,6 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experience</a>
-                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#analytics" class="nav-link">Analytics</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
@@ -70,6 +69,9 @@
         
         <div class="hero-content">
             <div class="hero-wrapper">
+                <div class="hero-profile fade-in">
+                    <img src="images/profile.jpeg" alt="J. Rajalakshmi" class="profile-img">
+                </div>
                 <div class="badge fade-in">✦ Data Analyst Portfolio</div>
                 
                 <h1 class="hero-title fade-in">J. Rajalakshmi</h1>
@@ -86,8 +88,8 @@
                 
                 <div class="hero-stats fade-in">
                     <div class="stat-card glass">
-                        <p class="stat-value">5+</p>
-                        <p class="stat-label">Projects Built</p>
+                        <p class="stat-value">10+</p>
+                        <p class="stat-label">Datasets Analyzed</p>
                     </div>
                     <div class="stat-card glass">
                         <p class="stat-value">Fresher</p>
@@ -100,7 +102,7 @@
                 </div>
                 
                 <div class="hero-buttons fade-in">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#skills" class="btn btn-primary">View Skills</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
                 
@@ -125,8 +127,8 @@
             
             <div class="stats-grid fade-in-on-scroll">
                 <div class="stat-box card">
-                    <p class="stat-big">5+</p>
-                    <p class="stat-small">Projects Completed</p>
+                    <p class="stat-big">10+</p>
+                    <p class="stat-small">Datasets Analyzed</p>
                 </div>
                 <div class="stat-box card">
                     <p class="stat-big">Fresher</p>
@@ -425,132 +427,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="section projects" id="projects">
-        <div class="container">
-            <div class="section-header fade-in-on-scroll">
-                <h2>Academic & Personal <span class="gradient-text">Projects</span></h2>
-                <p>Applying data analysis and visualization skills to real-world datasets</p>
-            </div>
-            
-            <div class="project-filters fade-in-on-scroll">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="python">Python</button>
-                <button class="filter-btn" data-filter="sql">SQL</button>
-                <button class="filter-btn" data-filter="powerbi">Power BI</button>
-                <button class="filter-btn" data-filter="dashboard">Dashboard</button>
-                <button class="filter-btn" data-filter="analytics">Analytics</button>
-            </div>
-            
-            <div class="projects-grid fade-in-on-scroll">
-                <div class="project-card card" data-category="python,analytics">
-                    <div class="project-icon">📊</div>
-                    <h3>Zepto Inventory Analytics</h3>
-                    <p>Comprehensive inventory dataset analysis converting Excel data to CSV, with data cleaning, validation, and trend analysis.</p>
-                    <div class="project-details hidden">
-                        <h5>Problem</h5>
-                        <p>Large inventory dataset needed organization and analysis for actionable insights</p>
-                        <h5>Solution</h5>
-                        <p>Converted Excel inventory data to CSV, performed EDA, identified trends, and created summary statistics</p>
-                        <h5>Outcome</h5>
-                        <p>Generated insights on stock levels, product performance, and inventory optimization opportunities</p>
-                    </div>
-                    <div class="project-badges">
-                        <span class="badge">Excel</span>
-                        <span class="badge">Python</span>
-                        <span class="badge">Pandas</span>
-                        <span class="badge">Data Cleaning</span>
-                    </div>
-                    <button class="expand-btn">View Details</button>
-                </div>
-                
-                <div class="project-card card featured" data-category="powerbi,dashboard">
-                    <div class="project-icon">📈</div>
-                    <h3>GST Compliance Dashboard</h3>
-                    <p>Power BI dashboard tracking GST registration, filing status, and compliance documentation across 50+ clients.</p>
-                    <div class="project-details hidden">
-                        <h5>Problem</h5>
-                        <p>Manual tracking of GST compliance for multiple clients was error-prone and time-consuming</p>
-                        <h5>Solution</h5>
-                        <p>Built automated Power BI dashboard pulling data from Excel, with KPI tracking and filing status visualization</p>
-                        <h5>Outcome</h5>
-                        <p>Reduced manual tracking time by 60% and improved compliance accuracy to 99.8%</p>
-                    </div>
-                    <div class="project-badges">
-                        <span class="badge">Power BI</span>
-                        <span class="badge">Excel</span>
-                        <span class="badge">SQL</span>
-                        <span class="badge">DAX</span>
-                    </div>
-                    <button class="expand-btn">View Details</button>
-                </div>
-                
-                <div class="project-card card" data-category="sql,analytics">
-                    <div class="project-icon">🗂️</div>
-                    <h3>Business Registration Analysis</h3>
-                    <p>SQL-based analysis of FSSAI and MSME registration patterns with query optimization and reporting.</p>
-                    <div class="project-details hidden">
-                        <h5>Problem</h5>
-                        <p>Complex registration data scattered across multiple sources with inconsistent formats</p>
-                        <h5>Solution</h5>
-                        <p>Created SQL queries to consolidate registration data, normalize formats, and generate comparison reports</p>
-                        <h5>Outcome</h5>
-                        <p>Enabled data-driven decisions reducing registration processing time by 40%</p>
-                    </div>
-                    <div class="project-badges">
-                        <span class="badge">SQL</span>
-                        <span class="badge">Data Cleaning</span>
-                        <span class="badge">Excel</span>
-                        <span class="badge">Reporting</span>
-                    </div>
-                    <button class="expand-btn">View Details</button>
-                </div>
-                
-                <div class="project-card card" data-category="python,analytics">
-                    <div class="project-icon">🔄</div>
-                    <h3>Client Data Pipeline</h3>
-                    <p>End-to-end data pipeline processing client information with validation and automated reporting.</p>
-                    <div class="project-details hidden">
-                        <h5>Problem</h5>
-                        <p>50+ client records needed systematic processing and continuous verification</p>
-                        <h5>Solution</h5>
-                        <p>Implemented Excel-based data pipeline with Python automation for validation and monthly reporting</p>
-                        <h5>Outcome</h5>
-                        <p>Maintained 99.5% data accuracy with 80% reduction in manual verification time</p>
-                    </div>
-                    <div class="project-badges">
-                        <span class="badge">Python</span>
-                        <span class="badge">Excel</span>
-                        <span class="badge">Automation</span>
-                        <span class="badge">Data Validation</span>
-                    </div>
-                    <button class="expand-btn">View Details</button>
-                </div>
-                
-                <div class="project-card card" data-category="powerbi,dashboard">
-                    <div class="project-icon">💰</div>
-                    <h3>Financial Services KPI Tracker</h3>
-                    <p>Interactive Power BI dashboard monitoring key performance indicators for financial services operations.</p>
-                    <div class="project-details hidden">
-                        <h5>Problem</h5>
-                        <p>Multiple spreadsheets made it difficult to track KPIs and identify trends in real-time</p>
-                        <h5>Solution</h5>
-                        <p>Consolidated data sources into Power BI with real-time KPI tracking and automated alerts</p>
-                        <h5>Outcome</h5>
-                        <p>Enabled leadership to make data-driven decisions with 50% faster reporting</p>
-                    </div>
-                    <div class="project-badges">
-                        <span class="badge">Power BI</span>
-                        <span class="badge">SQL</span>
-                        <span class="badge">DAX</span>
-                        <span class="badge">Data Modeling</span>
-                    </div>
-                    <button class="expand-btn">View Details</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Analytics Section -->
     <section class="section analytics" id="analytics">
         <div class="container">
@@ -702,7 +578,6 @@
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
